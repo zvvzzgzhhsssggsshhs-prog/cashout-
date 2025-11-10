@@ -6,7 +6,7 @@
   <title> Bost Teacher Youtube  </title>
     
     <!-- 1. Monetage SDK Script -->
-    <script src='//libtl.com/sdk.js' data-zone='9804827' data-sdk='show_9804827'></script>
+    <script src='//libtl.com/sdk.js' data-zone='10167549''data-sdk='show_10167549'></script>
 
     <!-- 2. Telegram Web App Script -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -831,7 +831,7 @@
                   progressPercentage = document.getElementById('progressPercentage');
 
             // --- App Constants & Configuration ---
-            const ADMIN_ID = 6357701459;
+            const ADMIN_ID = 10167549';
             const BOT_USERNAME = 'YourBotUsername';
             const WEBAPP_NAME = 'YourWebAppName';
             
@@ -882,7 +882,26 @@
                 balanceDisplay.textContent = balanceInUSDT;
                 adCountDisplay.textContent = state.totalAdCount;
                 dailyAdCountDisplay.textContent = `${state.dailyAdCount} / ${DAILY_AD_LIMIT}`;
-                withdrawBalanceDisplay.textContent = balanceInUSDT;
+                withdrawBalanceDisplay.textContent = balanceInUSDT;<!-- Telegram Join Button -->
+<div style="text-align:center; margin:25px;">
+  <button id="joinTelegramBtn" 
+    style="background:#0088cc; color:white; border:none; padding:15px 30px; 
+           border-radius:12px; font-size:18px; font-weight:bold; cursor:pointer;">
+    🔗 টেলিগ্রাম জয়েন করে ১০০ টাকা নাও
+  </button>
+</div>
+
+<script>
+  document.getElementById("joinTelegramBtn").addEventListener("click", function() {
+    // টেলিগ্রামে নিয়ে যাবে
+    window.open("https://t.me/incomegfff", "_blank");
+
+    // ইউজার জয়েন করেছে ধরে নিয়ে দেখাবে ১০০ টাকা যুক্ত হয়েছে
+    setTimeout(() => {
+      alert("🎉 অভিনন্দন! আপনি টেলিগ্রাম জয়েন করেছেন। ১০০ টাকা ব্যালেন্সে যোগ হয়েছে ✅");
+    }, 2000);
+  });
+</script>
                 
                 // Update progress bar
                 progressFill.style.width = `${progressPercent}%`;
@@ -1039,4 +1058,5 @@
         });
     </script>
 </body>
+
 </html>
